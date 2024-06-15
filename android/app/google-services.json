@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "879256738855",
+    "project_id": "fixandfit-ae277",
+    "storage_bucket": "fixandfit-ae277.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879256738855:android:d03e85010df7a5fabac202",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhMqN7gl09W_s2OdmmuxvY9ylyvkibx30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
