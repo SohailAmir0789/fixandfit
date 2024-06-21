@@ -53,13 +53,13 @@ class HomeScreen extends StatelessWidget {
                 openWhatsAppChat("+923361365902", "Hello I want some help");
               },
               child: const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image(
                     image: AssetImage(
-                      'assets/images/fixlogo.png',
+                      'assets/images/logowbg.png',
                     ),
-                    fit: BoxFit.fill,
+                    alignment: Alignment.center,
                   ),
                   Padding(
                     padding: EdgeInsets.all(8.0),
@@ -214,6 +214,9 @@ class HomeScreen extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(8, 8, 8, 1),
                   child: Text(
                     'Cleaning Services',
+                    style: TextStyle(
+                        fontFamily: 'assets/images/fonts/Poppins-Bold.ttf',
+                        fontSize: 16),
                   ),
                 ),
                 const Padding(
@@ -234,7 +237,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.transparent,
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
+                                  color: Colors.grey.withOpacity(0.2),
                                   spreadRadius: 5,
                                   blurRadius: 7,
                                   offset: Offset(
@@ -266,7 +269,7 @@ class HomeScreen extends StatelessWidget {
                               color: const Color.fromRGBO(241, 241, 241, 1.000),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
+                                  color: Colors.grey.withOpacity(0.2),
                                   spreadRadius: 5,
                                   blurRadius: 7,
                                   offset: Offset(
@@ -298,7 +301,7 @@ class HomeScreen extends StatelessWidget {
                               color: const Color.fromRGBO(241, 241, 241, 1.000),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
+                                  color: Colors.grey.withOpacity(0.2),
                                   spreadRadius: 5,
                                   blurRadius: 7,
                                   offset: Offset(
@@ -337,7 +340,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.transparent,
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
+                                  color: Colors.grey.withOpacity(0.2),
                                   spreadRadius: 5,
                                   blurRadius: 7,
                                   offset: Offset(
@@ -369,7 +372,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.transparent,
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
+                                  color: Colors.grey.withOpacity(0.2),
                                   spreadRadius: 5,
                                   blurRadius: 7,
                                   offset: Offset(
@@ -402,7 +405,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.transparent,
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
+                                  color: Colors.grey.withOpacity(0.2),
                                   spreadRadius: 5,
                                   blurRadius: 7,
                                   offset: Offset(
@@ -441,7 +444,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.transparent,
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
+                                  color: Colors.grey.withOpacity(0.2),
                                   spreadRadius: 5,
                                   blurRadius: 7,
                                   offset: Offset(
@@ -474,7 +477,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.transparent,
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
+                                  color: Colors.grey.withOpacity(0.2),
                                   spreadRadius: 5,
                                   blurRadius: 7,
                                   offset: Offset(
@@ -506,7 +509,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.transparent,
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
+                                  color: Colors.grey.withOpacity(0.2),
                                   spreadRadius: 5,
                                   blurRadius: 7,
                                   offset: Offset(
@@ -545,7 +548,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.transparent,
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
+                                  color: Colors.grey.withOpacity(0.2),
                                   spreadRadius: 5,
                                   blurRadius: 7,
                                   offset: Offset(
@@ -578,7 +581,7 @@ class HomeScreen extends StatelessWidget {
                               color: Colors.transparent,
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
+                                  color: Colors.grey.withOpacity(0.2),
                                   spreadRadius: 5,
                                   blurRadius: 7,
                                   offset: Offset(
@@ -614,7 +617,9 @@ class HomeScreen extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(8, 8, 8, 1),
                   child: Text(
                     'Home Appliance Repair',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontFamily: 'assets/images/fonts/Poppins-Bold.ttf',
+                        fontSize: 16),
                   ),
                 ),
                 const Padding(
@@ -815,7 +820,9 @@ class HomeScreen extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(8, 8, 8, 1),
                   child: Text(
                     'Carpentry Services',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontFamily: 'assets/images/fonts/Poppins-Bold.ttf',
+                        fontSize: 16),
                   ),
                 ),
                 const Padding(
@@ -1147,7 +1154,9 @@ class HomeScreen extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(8, 8, 8, 1),
                   child: Text(
                     'Plumbing Services',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontFamily: 'assets/images/fonts/Poppins-Bold.ttf',
+                        fontSize: 16),
                   ),
                 ),
                 const Padding(
@@ -1335,7 +1344,8 @@ class HomeScreen extends StatelessWidget {
                   child: Text(
                     'Electric Services',
                     style: TextStyle(
-                        fontFamily: 'assets/images/fonts/Poppins-Bold.ttf'),
+                        fontFamily: 'assets/images/fonts/Poppins-Bold.ttf',
+                        fontSize: 16),
                   ),
                 ),
                 const Padding(
@@ -1577,7 +1587,9 @@ class HomeScreen extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(8, 8, 8, 1),
                   child: Text(
                     'Other Popular Services',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontFamily: 'assets/images/fonts/Poppins-Bold.ttf',
+                        fontSize: 16),
                   ),
                 ),
                 const Padding(

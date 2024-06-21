@@ -80,28 +80,22 @@ class _SignUpScreenState extends State<SignUpScreen> {
             SizedBox(
               height: 20,
             ),
-            const SizedBox(
-              height: 150,
-              width: 200,
-              child: Image(
-                fit: BoxFit.fill,
-                image: AssetImage(
-                  "assets/images/fixlogo.png",
-                ),
-
-                // height: 150,
-                // width: 200,
+            Image(
+              image: AssetImage(
+                "assets/images/fixlogo.png",
               ),
+              height: 150,
+              width: 150,
             ),
-            const Padding(
-              padding: EdgeInsets.fromLTRB(8, 0, 8, 16),
-              child: Text(
-                "Sign Up",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            Text(
+              "Sign Up",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(16, 1, 16, 2),
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 2),
               child: Form(
                 key: _formKey,
                 child: Column(

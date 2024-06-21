@@ -179,6 +179,7 @@ flutter:
     - assets/images/sofacl.jpg
     - assets/images/carpetcl.jpg
     - assets/images/rugcl.jpg
+    - assets/images/logowbg.png
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
