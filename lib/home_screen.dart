@@ -53,16 +53,15 @@ class HomeScreen extends StatelessWidget {
                 openWhatsAppChat("+923361365902", "Hello I want some help");
               },
               child: const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Image(
+                    alignment: Alignment.center,
                     image: AssetImage(
                       'assets/images/logowbg.png',
                     ),
-                    alignment: Alignment.center,
                   ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
+                  SizedBox(
                     child: Image(
                       image: AssetImage(
                         'assets/images/wp.png',
@@ -73,7 +72,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
         drawer: Drawer(
@@ -637,33 +636,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'AC',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Services',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -678,33 +668,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Washing',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Machine',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -719,33 +700,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Fridge Or',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Freezer',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -767,33 +739,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Oven',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Repair',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -840,33 +803,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Bed',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Repair',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -881,26 +835,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Cabinets',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -915,26 +867,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Door',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -956,33 +906,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Door',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Locks',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -997,33 +938,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Bed',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Repair',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1038,26 +970,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Cabinets',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1079,26 +1009,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Wardrobe.',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1113,26 +1041,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Window',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1174,26 +1100,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Bathroom',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1208,26 +1132,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Kitchen',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1242,33 +1164,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Water',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Motor',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1290,33 +1203,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Water',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Tank',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1363,26 +1267,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Breaker',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1397,33 +1299,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Exhaust',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Fan',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1438,26 +1331,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Fan',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1479,25 +1370,24 @@ class HomeScreen extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(9),
-                            color: const Color.fromRGBO(241, 241, 241, 1.000),
+                            color: Colors.transparent,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.2),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
                           ),
                           height: 90,
                           width: 115,
-                          child: const Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Image(
-                                image: AssetImage('assets/images/deep1.png'),
-                                height: 35,
-                                width: 35,
-                              ),
-                              Text(
-                                'Light',
-                                style: TextStyle(
-                                    fontSize: 11, fontWeight: FontWeight.bold),
-                                textAlign: TextAlign.center,
-                              ),
-                            ],
+                          child: const Image(
+                            image: AssetImage('assets/images/sofacl.jpg'),
+                            fit: BoxFit.cover,
+                            // height: 35,
+                            // width: 35,
                           ),
                         ),
                         onTap: () {
@@ -1512,31 +1402,24 @@ class HomeScreen extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(9),
-                            color: const Color.fromRGBO(241, 241, 241, 1.000),
+                            color: Colors.transparent,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.2),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
                           ),
                           height: 90,
                           width: 115,
-                          child: const Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Image(
-                                image: AssetImage('assets/images/deep1.png'),
-                                height: 35,
-                                width: 35,
-                              ),
-                              Text(
-                                'Switch',
-                                style: TextStyle(
-                                    fontSize: 11, fontWeight: FontWeight.bold),
-                                textAlign: TextAlign.center,
-                              ),
-                              Text(
-                                'Board',
-                                style: TextStyle(
-                                    fontSize: 11, fontWeight: FontWeight.bold),
-                                textAlign: TextAlign.center,
-                              ),
-                            ],
+                          child: const Image(
+                            image: AssetImage('assets/images/sofacl.jpg'),
+                            fit: BoxFit.cover,
+                            // height: 35,
+                            // width: 35,
                           ),
                         ),
                         onTap: () {
@@ -1551,25 +1434,24 @@ class HomeScreen extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(9),
-                            color: const Color.fromRGBO(241, 241, 241, 1.000),
+                            color: Colors.transparent,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.2),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
                           ),
                           height: 90,
                           width: 115,
-                          child: const Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Image(
-                                image: AssetImage('assets/images/deep1.png'),
-                                height: 35,
-                                width: 35,
-                              ),
-                              Text(
-                                'Wiring',
-                                style: TextStyle(
-                                    fontSize: 11, fontWeight: FontWeight.bold),
-                                textAlign: TextAlign.center,
-                              ),
-                            ],
+                          child: const Image(
+                            image: AssetImage('assets/images/sofacl.jpg'),
+                            fit: BoxFit.cover,
+                            // height: 35,
+                            // width: 35,
                           ),
                         ),
                         onTap: () {
@@ -1607,33 +1489,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Pest Control',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Services',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1648,33 +1521,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Water Tank',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Cleaning',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1690,33 +1554,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'Generator',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Repair',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
@@ -1738,33 +1593,24 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.transparent,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
                             ),
                             height: 90,
                             width: 115,
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image(
-                                  image: AssetImage('assets/images/deep1.png'),
-                                  height: 35,
-                                  width: 35,
-                                ),
-                                Text(
-                                  'CCTV',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Text(
-                                  'Camera',
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
                             ),
                           ),
                           onTap: () {
