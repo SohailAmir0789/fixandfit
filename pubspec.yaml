@@ -49,13 +49,21 @@ dependencies:
   chips_choice: ^3.0.1
   flutter_native_splash: ^2.3.10
   google_fonts: ^4.0.4
+  firebase: ^9.0.3
+  messaging: ^0.3.0
+  firebase_messaging: ^14.7.19
 
 dev_dependencies:
   flutter_lints: ^3.0.1
 
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
 
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logowbg.png"
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.
@@ -66,30 +74,16 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/img1.png
-    - assets/images/img2.png
-    - assets/images/img3.png
-    - assets/images/img4.png
-    - assets/images/img5.png
-    - assets/images/img6.png
     - assets/images/aboutus.jpeg
-    - assets/images/img8.png
-    - assets/images/img12.png
     - assets/images/mission.jpeg
     - assets/images/panasonic1.png
     - assets/images/kenwood1.png
     - assets/images/orient1.png
     - assets/images/pel1.png
-    - assets/images/gree1.png
-    - assets/images/dawlance1.png
+    - assets/images/gree.png
+    - assets/images/dawlance.png
     - assets/images/haier1.png
     - assets/images/changhong1.png
-    - assets/images/pic1copy.png
-    - assets/images/pic2copy.png
-    - assets/images/pic3copy.png
-    - assets/images/pic4copy.png
-    - assets/images/pic5copy.png
-    - assets/images/pic6copy.png
     - assets/images/splashscreen.png
     - assets/images/loginlogo.png
     - assets/images/logo22.png
@@ -180,6 +174,31 @@ flutter:
     - assets/images/carpetcl.jpg
     - assets/images/rugcl.jpg
     - assets/images/logowbg.png
+    - assets/images/bnr1.jpg
+    - assets/images/bnr2.jpg
+    - assets/images/bnr3.jpg
+    - assets/images/bnr4.jpg
+    - assets/images/bnr5.jpg
+    - assets/images/bnr6.jpg
+    - assets/images/bnr7.jpg
+    - assets/images/sofac.png
+    - assets/images/carpetc.png
+    - assets/images/rugc.png
+    - assets/images/bathroomc.png
+    - assets/images/curtainc.png
+    - assets/images/floorc.png
+    - assets/images/windowsc.png
+    - assets/images/mattressc.png
+    - assets/images/kitchenc.png
+    - assets/images/deepc.png
+    - assets/images/acc.png
+    - assets/images/washinec.png
+    - assets/images/commercialc.png
+    - assets/images/fridgec.png
+    - assets/images/logoo.png
+    - assets/images/wpicon.png
+    - assets/images/ovenc.png
+    - assets/images/pkflag.png
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

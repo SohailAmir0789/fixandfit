@@ -1,4 +1,5 @@
 import 'package:fixandfit/Curtain.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 import 'package:fixandfit/Floor.dart';
 import 'package:fixandfit/Mattress.dart';
@@ -26,18 +27,21 @@ import 'package:fixandfit/watertank.dart';
 import 'package:fixandfit/window.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
-  final String username;
-  // ignore: unused_field
+  String username;
+
   final TextEditingController _mobileController = TextEditingController();
   HomeScreen({super.key, required this.username});
 
   final List images = [
-    {"id": 1, "imagepath": 'assets/images/bn1.jpg'},
-    {"id": 2, "imagepath": 'assets/images/bn1.jpg'},
-    {"id": 3, "imagepath": 'assets/images/bn1.jpg'},
+    {"id": 1, "imagepath": 'assets/images/bnr1.jpg'},
+    {"id": 2, "imagepath": 'assets/images/bnr2.jpg'},
+    {"id": 3, "imagepath": 'assets/images/bnr3.jpg'},
+    {"id": 4, "imagepath": 'assets/images/bnr4.jpg'},
+    {"id": 5, "imagepath": 'assets/images/bnr5.jpg'},
+    {"id": 6, "imagepath": 'assets/images/bnr6.jpg'},
+    {"id": 7, "imagepath": 'assets/images/bnr7.jpg'},
   ];
 
   @override
@@ -53,21 +57,28 @@ class HomeScreen extends StatelessWidget {
                 openWhatsAppChat("+923361365902", "Hello I want some help");
               },
               child: const Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image(
                     alignment: Alignment.center,
                     image: AssetImage(
-                      'assets/images/logowbg.png',
+                      'assets/images/logoo.png',
                     ),
                   ),
                   SizedBox(
-                    child: Image(
-                      image: AssetImage(
-                        'assets/images/wp.png',
+                    height: 10,
+                    width: 40,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: SizedBox(
+                      child: Image(
+                        image: AssetImage(
+                          'assets/images/wpicon.png',
+                        ),
+                        height: 25,
+                        width: 25,
                       ),
-                      height: 25,
-                      width: 25,
                     ),
                   ),
                 ],
@@ -104,22 +115,22 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                ListTile(
-                  leading: const Icon(Icons.home, color: Colors.white),
-                  title: const Text(
-                    "Home",
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                  hoverColor: hoverColor,
-                  onTap: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => HomeScreen(
-                              username: '',
-                            )));
-                  },
-                ),
+                // ListTile(
+                //   leading: const Icon(Icons.home, color: Colors.white),
+                //   title: const Text(
+                //     "Home",
+                //     style: TextStyle(
+                //       color: Colors.white,
+                //     ),
+                //   ),
+                //   hoverColor: hoverColor,
+                //   onTap: () {
+                //     Navigator.of(context).push(MaterialPageRoute(
+                //         builder: (context) => drawer(
+                //               username: '',
+                //             )));
+                //   },
+                // ),
                 ListTile(
                   leading: const Icon(Icons.phone, color: Colors.white),
                   title: const Text(
@@ -198,14 +209,14 @@ class HomeScreen extends StatelessWidget {
                       items: images
                           .map((item) => Image.asset(
                                 item['imagepath'],
-                                fit: BoxFit.cover,
+                                fit: BoxFit.fill,
                                 width: double.infinity,
                               ))
                           .toList(),
                       options: CarouselOptions(
                           scrollPhysics: const BouncingScrollPhysics(),
                           height: 220,
-                          aspectRatio: 2,
+                          aspectRatio: 1,
                           viewportFraction: 1,
                           autoPlay: true)),
                 ),
@@ -233,7 +244,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -247,7 +258,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/sofac.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -265,7 +276,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -279,7 +290,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: Image(
-                              image: AssetImage('assets/images/carpetcl.jpg'),
+                              image: AssetImage('assets/images/carpetc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -297,7 +308,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: const Color.fromRGBO(241, 241, 241, 1.000),
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -311,7 +322,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: Image(
-                              image: AssetImage('assets/images/rugcl.jpg'),
+                              image: AssetImage('assets/images/rugc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -336,7 +347,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -350,7 +361,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/floorc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -368,7 +379,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -382,7 +393,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/mattressc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -401,7 +412,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -415,7 +426,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/curtainc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -440,7 +451,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -454,7 +465,8 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image:
+                                  AssetImage('assets/images/commercialc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -473,7 +485,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -487,7 +499,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/windowsc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -505,7 +517,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -519,7 +531,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/kitchenc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -544,7 +556,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -558,7 +570,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/bathroomc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -577,7 +589,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -591,7 +603,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/floorc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -606,7 +618,7 @@ class HomeScreen extends StatelessWidget {
                           },
                         ),
                         Container(
-                          color: Colors.transparent,
+                          color: Colors.white,
                           height: 85,
                           width: 110,
                         ),
@@ -636,7 +648,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -650,7 +662,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/acc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -668,7 +680,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -682,7 +694,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/washinec.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -700,7 +712,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -714,7 +726,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/fridgec.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -739,7 +751,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -753,7 +765,7 @@ class HomeScreen extends StatelessWidget {
                             height: 90,
                             width: 115,
                             child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
+                              image: AssetImage('assets/images/ovenc.png'),
                               fit: BoxFit.cover,
                               // height: 35,
                               // width: 35,
@@ -768,12 +780,12 @@ class HomeScreen extends StatelessWidget {
                           },
                         ),
                         Container(
-                          color: Colors.transparent,
+                          color: Colors.white,
                           height: 85,
                           width: 110,
                         ),
                         Container(
-                          color: Colors.transparent,
+                          color: Colors.white,
                           height: 85,
                           width: 110,
                         ),
@@ -803,7 +815,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -835,7 +847,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -867,110 +879,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.2),
-                                  spreadRadius: 5,
-                                  blurRadius: 7,
-                                  offset: Offset(
-                                      0, 3), // changes position of shadow
-                                ),
-                              ],
-                            ),
-                            height: 90,
-                            width: 115,
-                            child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
-                              fit: BoxFit.cover,
-                              // height: 35,
-                              // width: 35,
-                            ),
-                          ),
-                          onTap: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const ExhaustFan(),
-                                ));
-                          },
-                        ),
-                      ]),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(8, 3, 8, 3),
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        InkWell(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.2),
-                                  spreadRadius: 5,
-                                  blurRadius: 7,
-                                  offset: Offset(
-                                      0, 3), // changes position of shadow
-                                ),
-                              ],
-                            ),
-                            height: 90,
-                            width: 115,
-                            child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
-                              fit: BoxFit.cover,
-                              // height: 35,
-                              // width: 35,
-                            ),
-                          ),
-                          onTap: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const ExhaustFan(),
-                                ));
-                          },
-                        ),
-                        InkWell(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.2),
-                                  spreadRadius: 5,
-                                  blurRadius: 7,
-                                  offset: Offset(
-                                      0, 3), // changes position of shadow
-                                ),
-                              ],
-                            ),
-                            height: 90,
-                            width: 115,
-                            child: const Image(
-                              image: AssetImage('assets/images/sofacl.jpg'),
-                              fit: BoxFit.cover,
-                              // height: 35,
-                              // width: 35,
-                            ),
-                          ),
-                          onTap: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const ExhaustFan(),
-                                ));
-                          },
-                        ),
-                        InkWell(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1009,7 +918,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1041,7 +950,110 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
+                            ),
+                            height: 90,
+                            width: 115,
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
+                            ),
+                          ),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const ExhaustFan(),
+                                ));
+                          },
+                        ),
+                        InkWell(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(9),
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
+                            ),
+                            height: 90,
+                            width: 115,
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
+                            ),
+                          ),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const ExhaustFan(),
+                                ));
+                          },
+                        ),
+                      ]),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(8, 3, 8, 3),
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        InkWell(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(9),
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
+                            ),
+                            height: 90,
+                            width: 115,
+                            child: const Image(
+                              image: AssetImage('assets/images/sofacl.jpg'),
+                              fit: BoxFit.cover,
+                              // height: 35,
+                              // width: 35,
+                            ),
+                          ),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const ExhaustFan(),
+                                ));
+                          },
+                        ),
+                        InkWell(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(9),
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1070,7 +1082,7 @@ class HomeScreen extends StatelessWidget {
                           },
                         ),
                         Container(
-                          color: Colors.transparent,
+                          color: Colors.white,
                           height: 85,
                           width: 110,
                         ),
@@ -1100,7 +1112,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1132,7 +1144,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1164,7 +1176,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1203,7 +1215,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1232,12 +1244,12 @@ class HomeScreen extends StatelessWidget {
                           },
                         ),
                         Container(
-                          color: Colors.transparent,
+                          color: Colors.white,
                           height: 85,
                           width: 110,
                         ),
                         Container(
-                          color: Colors.transparent,
+                          color: Colors.white,
                           height: 85,
                           width: 110,
                         ),
@@ -1267,7 +1279,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1299,7 +1311,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1331,7 +1343,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1370,7 +1382,7 @@ class HomeScreen extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(9),
-                            color: Colors.transparent,
+                            color: Colors.white,
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.withOpacity(0.2),
@@ -1402,7 +1414,7 @@ class HomeScreen extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(9),
-                            color: Colors.transparent,
+                            color: Colors.white,
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.withOpacity(0.2),
@@ -1434,7 +1446,7 @@ class HomeScreen extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(9),
-                            color: Colors.transparent,
+                            color: Colors.white,
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.withOpacity(0.2),
@@ -1489,7 +1501,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1521,7 +1533,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1554,7 +1566,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1593,7 +1605,7 @@ class HomeScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(9),
-                              color: Colors.transparent,
+                              color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),
@@ -1622,12 +1634,12 @@ class HomeScreen extends StatelessWidget {
                           },
                         ),
                         Container(
-                          color: Colors.transparent,
+                          color: Colors.white,
                           height: 85,
                           width: 110,
                         ),
                         Container(
-                          color: Colors.transparent,
+                          color: Colors.white,
                           height: 85,
                           width: 110,
                         ),

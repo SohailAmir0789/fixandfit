@@ -57,7 +57,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
       // Sign-up successful
       // You can add additional logic here, like storing user data in Firestore
 
-      // Navigate to the home screen
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(

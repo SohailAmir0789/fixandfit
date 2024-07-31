@@ -321,8 +321,8 @@ class _AcserviceState extends State<Acservice> {
                     height: 90,
                     width: 150,
                     child: const Center(
-                        child: Image(
-                            image: AssetImage('assets/images/Gree1.png'))),
+                        child:
+                            Image(image: AssetImage('assets/images/gree.png'))),
                   ),
                 ),
               ),
@@ -350,7 +350,7 @@ class _AcserviceState extends State<Acservice> {
                     width: 150,
                     child: const Center(
                         child: Image(
-                            image: AssetImage('assets/images/dawlance1.png'))),
+                            image: AssetImage('assets/images/dawlance.png'))),
                   ),
                 ),
               ),
