@@ -38,7 +38,7 @@ class _CurtainCleaningState extends State<CurtainCleaning> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'Curtain Cleaning',
             textAlign: TextAlign.start,
@@ -75,8 +75,8 @@ class _CurtainCleaningState extends State<CurtainCleaning> {
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey.shade400),
                         color: container1Color),
-                    height: 100,
-                    width: 150,
+                    height: 110,
+                    width: 160,
                     child: const Column(
                       children: [
                         Image(
@@ -109,8 +109,8 @@ class _CurtainCleaningState extends State<CurtainCleaning> {
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey.shade400),
                         color: container2Color),
-                    height: 100,
-                    width: 150,
+                    height: 110,
+                    width: 160,
                     child: const Padding(
                       padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                       child: Column(
@@ -148,7 +148,7 @@ class _CurtainCleaningState extends State<CurtainCleaning> {
                       border: Border.all(color: Colors.grey.shade400),
                       color: container3Color),
                   height: 100,
-                  width: 150,
+                  width: 160,
                   child: const Padding(
                     padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                     child: Column(

@@ -37,7 +37,7 @@ class _RugCleaningState extends State<RugCleaning> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'Rug Cleaning',
             textAlign: TextAlign.start,

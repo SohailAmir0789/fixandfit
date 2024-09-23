@@ -42,7 +42,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'Deep Cleaning',
             textAlign: TextAlign.start,
@@ -87,7 +87,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                             decoration: BoxDecoration(
                                 border: Border.all(color: Colors.grey.shade400),
                                 color: container1Color),
-                            height: 100,
+                            height: 110,
                             width: 150,
                             child: const Column(
                               children: [
@@ -95,7 +95,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                                   image: AssetImage(
                                       'assets/images/commercial.png'),
                                   height: 60,
-                                  width: 110,
+                                  width: 120,
                                 ),
                                 Text('Commercial Cleaning'),
                               ],
@@ -117,7 +117,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                             decoration: BoxDecoration(
                                 border: Border.all(color: Colors.grey.shade400),
                                 color: container2Color),
-                            height: 100,
+                            height: 110,
                             width: 150,
                             child: const Padding(
                               padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
@@ -126,7 +126,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                                   Image(
                                     image: AssetImage('assets/images/home.png'),
                                     height: 60,
-                                    width: 110,
+                                    width: 120,
                                   ),
                                   Text('Residential Cleaning'),
                                 ],
@@ -169,7 +169,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container11Color),
                       height: 70,
-                      width: 100,
+                      width: 110,
                       child: const Column(
                         children: [
                           IconButton(onPressed: null, icon: Icon(Icons.check)),
@@ -204,7 +204,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container22Color),
                       height: 70,
-                      width: 100,
+                      width: 110,
                       child: const Padding(
                         padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                         child: Column(
@@ -243,7 +243,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container33Color),
                       height: 70,
-                      width: 100,
+                      width: 110,
                       child: const Column(
                         children: [
                           IconButton(onPressed: null, icon: Icon(Icons.check)),
@@ -280,7 +280,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container4Color),
                       height: 70,
-                      width: 100,
+                      width: 110,
                       child: const Column(
                         children: [
                           IconButton(onPressed: null, icon: Icon(Icons.check)),
@@ -315,7 +315,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container5Color),
                       height: 70,
-                      width: 100,
+                      width: 110,
                       child: const Padding(
                         padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                         child: Column(
@@ -354,7 +354,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container6Color),
                       height: 70,
-                      width: 100,
+                      width: 110,
                       child: const Column(
                         children: [
                           IconButton(onPressed: null, icon: Icon(Icons.check)),
@@ -403,7 +403,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container111Color),
                       height: 80,
-                      width: 100,
+                      width: 115,
                       child: const Column(
                         children: [
                           IconButton(onPressed: null, icon: Icon(Icons.check)),
@@ -438,7 +438,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container222Color),
                       height: 80,
-                      width: 100,
+                      width: 115,
                       child: const Padding(
                         padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                         child: Column(
@@ -477,7 +477,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container333Color),
                       height: 80,
-                      width: 100,
+                      width: 115,
                       child: const Column(
                         children: [
                           IconButton(onPressed: null, icon: Icon(Icons.check)),
@@ -514,7 +514,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container44Color),
                       height: 80,
-                      width: 100,
+                      width: 115,
                       child: const Column(
                         children: [
                           IconButton(onPressed: null, icon: Icon(Icons.check)),
@@ -549,7 +549,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container55Color),
                       height: 80,
-                      width: 100,
+                      width: 115,
                       child: const Padding(
                         padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                         child: Column(
@@ -557,7 +557,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                             IconButton(
                                 onPressed: null, icon: Icon(Icons.check)),
                             Text(
-                              '1000 Yards 32 Marla',
+                              '1k Yards 32 Marla',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 11,
@@ -588,7 +588,7 @@ class _DeepCleaningState extends State<DeepCleaning> {
                           border: Border.all(color: Colors.grey.shade400),
                           color: container66Color),
                       height: 80,
-                      width: 100,
+                      width: 115,
                       child: const Column(
                         children: [
                           IconButton(onPressed: null, icon: Icon(Icons.check)),

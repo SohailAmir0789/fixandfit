@@ -28,7 +28,7 @@ class _FloorCleaningState extends State<FloorCleaning> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'Floor Cleaning',
             textAlign: TextAlign.start,

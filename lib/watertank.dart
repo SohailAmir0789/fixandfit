@@ -35,7 +35,7 @@ class _WaterTankCleaningState extends State<WaterTankCleaning> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'Water Tank Cleaning',
             textAlign: TextAlign.start,

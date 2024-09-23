@@ -39,7 +39,7 @@ class _CctvServiceState extends State<CctvService> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'CCTV Camera Service',
             textAlign: TextAlign.start,

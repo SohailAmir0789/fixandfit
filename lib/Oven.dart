@@ -42,7 +42,7 @@ class _OvenRepairState extends State<OvenRepair> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'Microwave Oven Repair',
             textAlign: TextAlign.start,
@@ -358,7 +358,7 @@ class _OvenRepairState extends State<OvenRepair> {
                     width: 150,
                     child: const Center(
                         child: Image(
-                            image: AssetImage('assets/images/dawlance1.png'))),
+                            image: AssetImage('assets/images/dawlance.png'))),
                   ),
                 ),
               ),

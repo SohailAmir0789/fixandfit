@@ -35,7 +35,7 @@ class _KitchenCleaningState extends State<KitchenCleaning> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'Kitchen Cleaning',
             textAlign: TextAlign.start,

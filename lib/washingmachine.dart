@@ -41,7 +41,7 @@ class _WashingMashineState extends State<WashingMashine> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'Washing Machine Repair',
             textAlign: TextAlign.start,
@@ -308,8 +308,7 @@ class _WashingMashineState extends State<WashingMashine> {
                       width: 150,
                       child: const Center(
                           child: Image(
-                              image:
-                                  AssetImage('assets/images/dawlance1.png'))),
+                              image: AssetImage('assets/images/dawlance.png'))),
                     ),
                   ),
                 ),

@@ -43,7 +43,7 @@ class _GeneratorState extends State<Generator> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'Generator Service',
             textAlign: TextAlign.start,

@@ -77,7 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.all(16.0),
+                            padding: EdgeInsets.all(16.0),
                             child: Container(
                               height: 50,
                               width: double.infinity,
@@ -89,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 controller: mobileController,
                                 keyboardType: TextInputType.phone,
                                 decoration: InputDecoration(
-                                    icon: const Icon(Icons.flag_circle),
+                                    icon: Icon(Icons.login),
                                     hintText: 'Phone Number',
                                     hintStyle:
                                         TextStyle(color: Colors.grey.shade800)),

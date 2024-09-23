@@ -74,7 +74,6 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/aboutus.jpeg
     - assets/images/mission.jpeg
     - assets/images/panasonic1.png
     - assets/images/kenwood1.png
@@ -84,9 +83,6 @@ flutter:
     - assets/images/dawlance.png
     - assets/images/haier1.png
     - assets/images/changhong1.png
-    - assets/images/splashscreen.png
-    - assets/images/loginlogo.png
-    - assets/images/logo22.png
     - assets/images/bosch1.png
     - assets/images/lg1.png
     - assets/images/mitsubishi1.png
@@ -143,36 +139,12 @@ flutter:
     - assets/images/12seater.png
     - assets/images/overhead.png
     - assets/images/fiber.png
-    - assets/images/underground.png
     - assets/images/generator.png
     - assets/images/commercialgen.png
     - assets/images/contact1.png
     - assets/images/contact2.png
-    - assets/images/deep1.png
-    - assets/images/whatsapp.png
-    - assets/images/sofa3.png
-    - assets/images/sofa4.png
-    - assets/images/pk.png
-    - assets/images/wp.png
-    - assets/images/kitchenclean.jpg
-    - assets/images/sofaclean.jpg
-    - assets/images/carpetclean.jpg
-    - assets/images/rugclean.jpg
-    - assets/images/deepclean.jpg
-    - assets/images/mattressclean.jpg
-    - assets/images/curtainclean.jpg
-    - assets/images/commercialclean.jpg
-    - assets/images/windowclean.jpg
-    - assets/images/bathroomclean.jpg
-    - assets/images/floorclean.jpg
+    - assets/images/windowc.png
     - assets/images/fixlogo.png
-    - assets/images/sofapre.jpg
-    - assets/images/carpetpre.jpg
-    - assets/images/rugpre.jpg
-    - assets/images/bn1.jpg
-    - assets/images/sofacl.jpg
-    - assets/images/carpetcl.jpg
-    - assets/images/rugcl.jpg
     - assets/images/logowbg.png
     - assets/images/bnr1.jpg
     - assets/images/bnr2.jpg
@@ -187,18 +159,41 @@ flutter:
     - assets/images/bathroomc.png
     - assets/images/curtainc.png
     - assets/images/floorc.png
-    - assets/images/windowsc.png
+    - assets/images/windowx.png
     - assets/images/mattressc.png
     - assets/images/kitchenc.png
     - assets/images/deepc.png
     - assets/images/acc.png
-    - assets/images/washinec.png
+    - assets/images/washingc.png
     - assets/images/commercialc.png
     - assets/images/fridgec.png
     - assets/images/logoo.png
     - assets/images/wpicon.png
     - assets/images/ovenc.png
-    - assets/images/pkflag.png
+    - assets/images/doorlockc.png
+    - assets/images/switchc.png
+    - assets/images/cabinetc.png
+    - assets/images/door.png
+    - assets/images/breakerc.png
+    - assets/images/wiringc.png
+    - assets/images/wardrobe.png
+    - assets/images/lightc.png
+    - assets/images/watertankc.png
+    - assets/images/generatorc.png
+    - assets/images/exhaustc.png
+    - assets/images/cctvc.png
+    - assets/images/fanc.png
+    - assets/images/pestc.png
+    - assets/images/bedc.png
+    - assets/images/watertankcl.png
+    - assets/images/bathroom.png
+    - assets/images/watermotorc.png
+    - assets/images/underground.png
+    - assets/images/contact.jpg
+    - assets/images/kitchen.png
+    - assets/images/whatsapp.png
+    - assets/images/email.png
+    - assets/images/www.png
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

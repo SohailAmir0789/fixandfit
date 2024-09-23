@@ -51,7 +51,7 @@ class _SofaCleaningState extends State<SofaCleaning> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromRGBO(254, 206, 0, 1.000),
+          backgroundColor: Colors.white,
           title: const Text(
             'Sofa Cleaning',
             textAlign: TextAlign.start,

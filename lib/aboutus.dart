@@ -5,10 +5,9 @@ class AboutUs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const hoverColor = Color.fromRGBO(254, 206, 0, 1.000);
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromRGBO(255, 254, 200, 1.000),
+          backgroundColor: Colors.white,
           title: const Text(
             'About Us',
             textAlign: TextAlign.start,

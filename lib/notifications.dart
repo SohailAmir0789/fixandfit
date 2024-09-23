@@ -14,7 +14,7 @@ class _NotificationPageState extends State<NotificationPage> {
     final message = ModalRoute.of(context)!.settings.arguments as RemoteMessage;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromRGBO(255, 254, 200, 1.000),
+        backgroundColor: Colors.white,
         title: const Text(
           'Notifications',
           textAlign: TextAlign.start,

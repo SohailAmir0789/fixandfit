@@ -63,7 +63,7 @@ class _AcserviceState extends State<Acservice> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'AC Services',
             textAlign: TextAlign.start,
@@ -380,7 +380,7 @@ class _AcserviceState extends State<Acservice> {
                     width: 150,
                     child: const Center(
                         child: Image(
-                            image: AssetImage('assets/images/Haier1.png'))),
+                            image: AssetImage('assets/images/haier1.png'))),
                   ),
                 ),
               ),

@@ -44,7 +44,7 @@ class _WindowCleaningState extends State<WindowCleaning> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'Window Cleaning',
             textAlign: TextAlign.start,

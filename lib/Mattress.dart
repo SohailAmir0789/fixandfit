@@ -43,7 +43,7 @@ class _MattressCleaningState extends State<MattressCleaning> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 255, 233, 155),
+          backgroundColor: Colors.white,
           title: const Text(
             'Mattress Cleaning',
             textAlign: TextAlign.start,

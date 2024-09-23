@@ -32,7 +32,7 @@ class _ExhaustFanState extends State<ExhaustFan> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: const Color.fromRGBO(254, 206, 0, 1.000),
+          backgroundColor: Colors.white,
           title: const Text(
             'Tell us about your problem',
             textAlign: TextAlign.start,
