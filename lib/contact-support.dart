@@ -25,7 +25,7 @@ class _ContactSupportState extends State<ContactSupport> {
             child: Column(
           children: [
             Container(
-              child: Image(image: AssetImage('assets/images/contact2.png')),
+              child: const Image(image: AssetImage('assets/images/contact2.png')),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),

@@ -8,12 +8,11 @@ class EcoButton extends StatelessWidget {
   bool? isLoading;
 
   EcoButton(
-      {Key? key,
+      {super.key,
       this.title,
       this.isLoading = false,
       this.isLoginButton = false,
-      this.onPress})
-      : super(key: key);
+      this.onPress});
 
   @override
   Widget build(BuildContext context) {

@@ -147,7 +147,7 @@ class _FormField2State extends State<FormField2> {
                   Container(
                     height: 8,
                   ),
-                  Container(
+                  SizedBox(
                     height: 35,
                     width: 480,
                     child: ElevatedButton(

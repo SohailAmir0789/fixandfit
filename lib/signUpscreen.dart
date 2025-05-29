@@ -1,11 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:fixandfit/custom/customHeading.dart';
+import 'package:fixandfit/custom/customTextFormField.dart';
 import 'package:fixandfit/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class SignUpScreen extends StatefulWidget {
   final String mobileNumber;
-  SignUpScreen(
+  const SignUpScreen(
     this.mobileNumber, {
     super.key,
     required String username,
@@ -61,7 +63,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           context,
           MaterialPageRoute(
               builder: (context) => HomeScreen(
-                    username: '$name',
+                    username: name,
                   )));
     } catch (e) {
       // Handle sign-up errors
@@ -76,22 +78,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Image(
-              image: AssetImage(
-                "assets/images/fixlogo.png",
-              ),
-              height: 150,
-              width: 150,
-            ),
-            Text(
-              "Sign Up",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
+            const Customheading(title: "SignUp"),
+            const SizedBox(
+              height: 20,
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 2),
@@ -99,26 +91,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 key: _formKey,
                 child: Column(
                   children: [
-                    TextFormField(
-                      controller: _nameController,
-                      decoration: InputDecoration(
-                          contentPadding: const EdgeInsets.all(8),
-                          labelText: 'Name',
-                          labelStyle: TextStyle(
-                              color: Colors.grey.shade400, fontSize: 14),
-                          border: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400)),
-                          focusedBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400))),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return 'Please enter your name';
-                        }
-                        return null;
-                      },
-                    ),
+                    Customtextformfield(contName: _nameController, txt: "Name"),
                     const SizedBox(
                       height: 20,
                     ),
@@ -135,7 +108,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           children: [
                             Text(
                               ' Mobile Number : ${widget.mobileNumber}',
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.black87,
                                 fontSize: 15,
                               ),
@@ -146,26 +119,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     const SizedBox(
                       height: 20,
                     ),
-                    TextFormField(
-                      controller: _emailController,
-                      decoration: InputDecoration(
-                          contentPadding: const EdgeInsets.all(8),
-                          labelText: 'Email',
-                          labelStyle: TextStyle(
-                              color: Colors.grey.shade400, fontSize: 14),
-                          border: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400)),
-                          focusedBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400))),
-                      validator: (value) {
-                        if (value!.isEmpty || !value.contains('@')) {
-                          return 'Please enter a valid email address';
-                        }
-                        return null;
-                      },
-                    ),
+                    Customtextformfield(
+                        contName: _emailController, txt: "Email"),
                     const SizedBox(
                       height: 20,
                     ),
@@ -212,103 +167,29 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     const SizedBox(
                       height: 20,
                     ),
-                    TextFormField(
-                      controller: _cityController,
-                      decoration: InputDecoration(
-                          contentPadding: const EdgeInsets.all(8),
-                          labelText: 'Area',
-                          labelStyle: TextStyle(
-                              color: Colors.grey.shade400, fontSize: 14),
-                          border: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400)),
-                          focusedBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400))),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return 'Please enter your Area';
-                        }
-                        return null;
-                      },
-                    ),
+                    Customtextformfield(contName: _cityController, txt: "Area"),
                     const SizedBox(
                       height: 20,
                     ),
-                    TextFormField(
-                      controller: _addressController,
-                      decoration: InputDecoration(
-                          contentPadding: const EdgeInsets.all(8),
-                          labelText: 'Enter Your Address',
-                          labelStyle: TextStyle(
-                              color: Colors.grey.shade400, fontSize: 14),
-                          border: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400)),
-                          focusedBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400))),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return 'Please enter your Address';
-                        }
-                        return null;
-                      },
-                    ),
+                    Customtextformfield(
+                        contName: _addressController, txt: "Address"),
                     const SizedBox(
                       height: 20,
                     ),
-                    TextFormField(
-                      controller: _passwordController,
-                      decoration: InputDecoration(
-                          contentPadding: const EdgeInsets.all(8),
-                          labelText: 'Password',
-                          labelStyle: TextStyle(
-                              color: Colors.grey.shade400, fontSize: 14),
-                          border: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400)),
-                          focusedBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400))),
-                      obscureText: true,
-                      validator: (value) {
-                        if (value!.isEmpty || value.length < 6) {
-                          return 'Password must be at least 6 characters long';
-                        }
-                        return null;
-                      },
-                    ),
+                    Customtextformfield(
+                        contName: _passwordController, txt: "Password"),
                     const SizedBox(
                       height: 20,
                     ),
-                    TextFormField(
-                      controller: _retypePasswordController,
-                      decoration: InputDecoration(
-                          contentPadding: const EdgeInsets.all(8),
-                          labelText: 'Confirm Password',
-                          labelStyle: TextStyle(
-                              color: Colors.grey.shade400, fontSize: 14),
-                          border: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400)),
-                          focusedBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey.shade400))),
-                      obscureText: true,
-                      validator: (value) {
-                        if (value != _passwordController.text) {
-                          return 'Passwords do not match';
-                        }
-                        return null;
-                      },
-                    ),
-                    SizedBox(height: 30),
+                    Customtextformfield(
+                        contName: _retypePasswordController,
+                        txt: "Comfirm Password"),
+                    const SizedBox(height: 30),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50)),
-                        minimumSize: Size(400, 50),
+                        minimumSize: const Size(400, 50),
                         backgroundColor: Colors.black,
                       ),
                       onPressed: () {

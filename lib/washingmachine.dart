@@ -624,7 +624,7 @@ class _WashingMashineState extends State<WashingMashine> {
                         Container(
                           height: 8,
                         ),
-                        Container(
+                        SizedBox(
                           height: 35,
                           width: 480,
                           child: ElevatedButton(

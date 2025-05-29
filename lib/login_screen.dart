@@ -1,5 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:fixandfit/home_screen.dart';
+import 'package:fixandfit/bottomNavigation.dart';
 import 'package:fixandfit/signUpscreen.dart';
 
 import 'package:fixandfit/widget/eco_button.dart';
@@ -12,41 +11,41 @@ class LoginScreen extends StatefulWidget {
   String? Function(String?)? validate;
 
   LoginScreen({
-    Key? key,
+    super.key,
     this.validate,
-  }) : super(key: key);
+  });
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+  //final FirebaseAuth _auth = FirebaseAuth.instance;
   final ButtonStyle style = ElevatedButton.styleFrom(
     textStyle: const TextStyle(fontSize: 15),
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(50),
     ),
-    backgroundColor: Color.fromRGBO(254, 206, 0, 1.000),
+    backgroundColor: const Color.fromRGBO(254, 206, 0, 1.000),
   );
 
-  Future<void> _loginAsGuest(BuildContext context) async {
-    try {
-      // Sign in as a guest using anonymous authentication
-      await _auth.signInAnonymously();
+  // Future<void> _loginAsGuest(BuildContext context) async {
+  //   try {
+  //     // Sign in as a guest using anonymous authentication
+  //     await _auth.signInAnonymously();
 
-      // Navigate to the home screen or perform other actions
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-            builder: (context) => HomeScreen(
-                  username: '',
-                )),
-      );
-    } catch (e) {
-      print("Error signing in as a guest: $e");
-    }
-  }
+  //     // Navigate to the home screen or perform other actions
+  //     Navigator.pushReplacement(
+  //       context,
+  //       MaterialPageRoute(
+  //           builder: (context) => HomeScreen(
+  //                 username: '',
+  //               )),
+  //     );
+  //   } catch (e) {
+  //     print("Error signing in as a guest: $e");
+  //   }
+  // }
 
   final TextEditingController mobileController = TextEditingController();
 
@@ -77,8 +76,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Column(
                         children: [
                           Padding(
-                            padding: EdgeInsets.all(16.0),
-                            child: Container(
+                            padding: const EdgeInsets.all(16.0),
+                            child: SizedBox(
                               height: 50,
                               width: double.infinity,
                               // decoration: BoxDecoration(
@@ -89,7 +88,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 controller: mobileController,
                                 keyboardType: TextInputType.phone,
                                 decoration: InputDecoration(
-                                    icon: Icon(Icons.login),
+                                    icon: const Icon(Icons.login),
                                     hintText: 'Phone Number',
                                     hintStyle:
                                         TextStyle(color: Colors.grey.shade800)),
@@ -173,6 +172,6 @@ void _performGuestLogin(BuildContext context) {
   // For example, you might want to set the user as a guest and navigate to the main screen
   Navigator.pushReplacement(
     context,
-    MaterialPageRoute(builder: (context) => HomeScreen(username: 'Guest')),
+    MaterialPageRoute(builder: (context) => const Bottomnavigation()),
   );
 }

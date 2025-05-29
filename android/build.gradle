@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.9.10'
+    ext.kotlin_version = '1.9.24'
     repositories {
         google()
         mavenCentral()
@@ -7,7 +7,7 @@ buildscript {
 
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.android.tools.build:gradle:7.0.0'
+        classpath 'com.android.tools.build:gradle:7.3.1'
     }
 }
 plugins {
@@ -15,6 +15,7 @@ plugins {
 
   // Add the dependency for the Google services Gradle plugin
  id 'com.google.gms.google-services' version '4.4.0' 
+ id 'org.jetbrains.kotlin.android' version '1.9.24' apply false
 
 }
 allprojects {

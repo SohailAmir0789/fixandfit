@@ -38,7 +38,6 @@ dependencies:
     sdk: flutter
   csc_picker: ^0.2.7
   flutter_country_state: ^0.2.10
-  whatsapp: ^2.0.0
   url_launcher: ^6.2.2
   simple_animations: ^5.0.2
   group_grid_view: ^1.0.1
@@ -47,11 +46,12 @@ dependencies:
   choice: ^2.3.0
   flutter_chip_tags: ^2.0.2
   chips_choice: ^3.0.1
-  flutter_native_splash: ^2.3.10
   google_fonts: ^4.0.4
   firebase: ^9.0.3
   messaging: ^0.3.0
   firebase_messaging: ^14.7.19
+  get: ^4.7.2
+  lottie: ^3.0.0
 
 dev_dependencies:
   flutter_lints: ^3.0.1
@@ -74,126 +74,130 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/mission.jpeg
-    - assets/images/panasonic1.png
-    - assets/images/kenwood1.png
-    - assets/images/orient1.png
-    - assets/images/pel1.png
-    - assets/images/gree.png
-    - assets/images/dawlance.png
-    - assets/images/haier1.png
-    - assets/images/changhong1.png
-    - assets/images/bosch1.png
-    - assets/images/lg1.png
-    - assets/images/mitsubishi1.png
-    - assets/images/samsung1.png
-    - assets/images/hoover1.png
-    - assets/images/hikvision1.png
-    - assets/images/alhua1.png
-    - assets/images/cam.png
-    - assets/images/rat.png
-    - assets/images/flies.png
-    - assets/images/bug.png
-    - assets/images/cam.png
-    - assets/images/service1.png
-    - assets/images/mosquito.png
-    - assets/images/coackroch.png
-    - assets/images/doctor.png
-    - assets/images/camera.png
-    - assets/images/camera2.png
-    - assets/images/shop.png
-    - assets/images/resturant.png
-    - assets/images/office.png
-    - assets/images/commercial.png
-    - assets/images/bank.png
-    - assets/images/question.png
-    - assets/images/factory.png
-    - assets/images/1cur.png
-    - assets/images/2cur.png
-    - assets/images/3cur.png
-    - assets/images/ac.png
-    - assets/images/ac1.png
-    - assets/images/1bed.png
-    - assets/images/2bed.png
-    - assets/images/window1.png
-    - assets/images/window2.png
-    - assets/images/oven.png
-    - assets/images/stoveoven.png
-    - assets/images/oven1.png
-    - assets/images/semiauto.png
-    - assets/images/manual.png
-    - assets/images/geyser.png
-    - assets/images/gasgeyser.png
-    - assets/images/instantgas.png
-    - assets/images/deepfr.png
-    - assets/images/refrigerator.png
-    - assets/images/commercial.png
-    - assets/images/home.png
-    - assets/images/light.png
-    - assets/images/dark.png
-    - assets/images/white.png
-    - assets/images/3seater.png
-    - assets/images/5seater.png
-    - assets/images/7seater.png
-    - assets/images/9seater.png
-    - assets/images/12seater.png
-    - assets/images/overhead.png
-    - assets/images/fiber.png
-    - assets/images/generator.png
-    - assets/images/commercialgen.png
-    - assets/images/contact1.png
-    - assets/images/contact2.png
-    - assets/images/windowc.png
-    - assets/images/fixlogo.png
-    - assets/images/logowbg.png
-    - assets/images/bnr1.jpg
-    - assets/images/bnr2.jpg
-    - assets/images/bnr3.jpg
-    - assets/images/bnr4.jpg
-    - assets/images/bnr5.jpg
-    - assets/images/bnr6.jpg
-    - assets/images/bnr7.jpg
-    - assets/images/sofac.png
-    - assets/images/carpetc.png
-    - assets/images/rugc.png
-    - assets/images/bathroomc.png
-    - assets/images/curtainc.png
-    - assets/images/floorc.png
-    - assets/images/windowx.png
-    - assets/images/mattressc.png
-    - assets/images/kitchenc.png
-    - assets/images/deepc.png
-    - assets/images/acc.png
-    - assets/images/washingc.png
-    - assets/images/commercialc.png
-    - assets/images/fridgec.png
-    - assets/images/logoo.png
-    - assets/images/wpicon.png
-    - assets/images/ovenc.png
-    - assets/images/doorlockc.png
-    - assets/images/switchc.png
-    - assets/images/cabinetc.png
-    - assets/images/door.png
-    - assets/images/breakerc.png
-    - assets/images/wiringc.png
-    - assets/images/wardrobe.png
-    - assets/images/lightc.png
-    - assets/images/watertankc.png
-    - assets/images/generatorc.png
-    - assets/images/exhaustc.png
-    - assets/images/cctvc.png
-    - assets/images/fanc.png
-    - assets/images/pestc.png
-    - assets/images/bedc.png
-    - assets/images/watertankcl.png
-    - assets/images/bathroom.png
-    - assets/images/watermotorc.png
-    - assets/images/underground.png
-    - assets/images/contact.jpg
-    - assets/images/kitchen.png
-    - assets/images/whatsapp.png
-    - assets/images/email.png
-    - assets/images/www.png
+    - assets/images/
+    - assets/animations/
+    # - assets/images/mission.jpeg
+    # - assets/images/panasonic1.png
+    # - assets/images/kenwood1.png
+    # - assets/images/orient1.png
+    # - assets/images/pel1.png
+    # - assets/images/gree.png
+    # - assets/images/dawlance.png
+    # - assets/images/haier1.png
+    # - assets/images/changhong1.png
+    # - assets/images/bosch1.png
+    # - assets/images/lg1.png
+    # - assets/images/mitsubishi1.png
+    # - assets/images/samsung1.png
+    # - assets/images/hoover1.png
+    # - assets/images/hikvision1.png
+    # - assets/images/alhua1.png
+    # - assets/images/cam.png
+    # - assets/images/rat.png
+    # - assets/images/flies.png
+    # - assets/images/bug.png
+    # - assets/images/cam.png
+    # - assets/images/service1.png
+    # - assets/images/mosquito.png
+    # - assets/images/coackroch.png
+    # - assets/images/doctor.png
+    # - assets/images/camera.png
+    # - assets/images/camera2.png
+    # - assets/images/shop.png
+    # - assets/images/resturant.png
+    # - assets/images/office.png
+    # - assets/images/commercial.png
+    # - assets/images/bank.png
+    # - assets/images/question.png
+    # - assets/images/factory.png
+    # - assets/images/1cur.png
+    # - assets/images/2cur.png
+    # - assets/images/3cur.png
+    # - assets/images/ac.png
+    # - assets/images/ac1.png
+    # - assets/images/1bed.png
+    # - assets/images/2bed.png
+    # - assets/images/window1.png
+    # - assets/images/window2.png
+    # - assets/images/oven.png
+    # - assets/images/stoveoven.png
+    # - assets/images/oven1.png
+    # - assets/images/semiauto.png
+    # - assets/images/manual.png
+    # - assets/images/geyser.png
+    # - assets/images/gasgeyser.png
+    # - assets/images/instantgas.png
+    # - assets/images/deepfr.png
+    # - assets/images/refrigerator.png
+    # - assets/images/commercial.png
+    # - assets/images/home.png
+    # - assets/images/light.png
+    # - assets/images/dark.png
+    # - assets/images/white.png
+    # - assets/images/3seater.png
+    # - assets/images/5seater.png
+    # - assets/images/7seater.png
+    # - assets/images/9seater.png
+    # - assets/images/12seater.png
+    # - assets/images/overhead.png
+    # - assets/images/fiber.png
+    # - assets/images/generator.png
+    # - assets/images/commercialgen.png
+    # - assets/images/contact1.png
+    # - assets/images/contact2.png
+    # - assets/images/windowc.png
+    # - assets/images/fixlogo.png
+    # - assets/images/logowbg.png
+    # - assets/images/bnr1.jpg
+    # - assets/images/bnr2.jpg
+    # - assets/images/bnr3.jpg
+    # - assets/images/bnr4.jpg
+    # - assets/images/bnr5.jpg
+    # - assets/images/bnr6.jpg
+    # - assets/images/bnr7.jpg
+    # - assets/images/sofac.png
+    # - assets/images/carpetc.png
+    # - assets/images/rugc.png
+    # - assets/images/bathroomc.png
+    # - assets/images/curtainc.png
+    # - assets/images/floorc.png
+    # - assets/images/windowx.png
+    # - assets/images/mattressc.png
+    # - assets/images/kitchenc.png
+    # - assets/images/deepc.png
+    # - assets/images/acc.png
+    # - assets/images/washingc.png
+    # - assets/images/commercialc.png
+    # - assets/images/fridgec.png
+    # - assets/images/logoo.png
+    # - assets/images/wpicon.png
+    # - assets/images/ovenc.png
+    # - assets/images/doorlockc.png
+    # - assets/images/switchc.png
+    # - assets/images/cabinetc.png
+    # - assets/images/door.png
+    # - assets/images/breakerc.png
+    # - assets/images/wiringc.png
+    # - assets/images/wardrobe.png
+    # - assets/images/lightc.png
+    # - assets/images/watertankc.png
+    # - assets/images/generatorc.png
+    # - assets/images/exhaustc.png
+    # - assets/images/cctvc.png
+    # - assets/images/fanc.png
+    # - assets/images/pestc.png
+    # - assets/images/bedc.png
+    # - assets/images/watertankcl.png
+    # - assets/images/bathroom.png
+    # - assets/images/watermotorc.png
+    # - assets/images/underground.png
+    # - assets/images/contact.jpg
+    # - assets/images/kitchen.png
+    # - assets/images/whatsapp.png
+    # - assets/images/email.png
+    # - assets/images/www.png
+    - assets/images/onboard1.png
+    - assets/images/onboard2.png
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -208,12 +212,12 @@ flutter:
   fonts:
     - family: CustomIcons
       fonts:
-        - asset: assets/images/fonts/CustomIcons.ttf
+        - asset: assets/fonts/CustomIcons.ttf
 
     - family: Poppins
       fonts:
-        - asset: assets/images/fonts/Poppins-Bold.ttf
-        - asset: assets/images/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf
           weight: 700
   #
   # For details regarding fonts from package dependencies,

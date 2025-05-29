@@ -1,5 +1,5 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -32,7 +32,7 @@ class _CctvServiceState extends State<CctvService> {
   late String c2;
   late String c3;
 
-  User? user = FirebaseAuth.instance.currentUser;
+  //User? user = FirebaseAuth.instance.currentUser;
   var valueChoose;
   List listItem = ["karachi", "Lahore"];
   @override
@@ -531,19 +531,19 @@ class _CctvServiceState extends State<CctvService> {
                               'Area': _cityController.text.trim(),
                               'Address': _addressController.text.trim(),
                             };
-                            await FirebaseFirestore.instance
-                                .collection('cctv')
-                                .doc()
-                                .set(CctvService);
-                            if (_formkey.currentState!.validate()) {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text(
-                                    'Your request has been marked',
-                                  ),
-                                ),
-                              );
-                            }
+                            // await FirebaseFirestore.instance
+                            //     .collection('cctv')
+                            //     .doc()
+                            //     .set(CctvService);
+                            // if (_formkey.currentState!.validate()) {
+                            //   ScaffoldMessenger.of(context).showSnackBar(
+                            //     const SnackBar(
+                            //       content: Text(
+                            //         'Your request has been marked',
+                            //       ),
+                            //     ),
+                            //   );
+                            // }
                           },
                           child: const Text('Book Now'),
                         ),
